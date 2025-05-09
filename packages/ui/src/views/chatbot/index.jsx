@@ -111,27 +111,30 @@ const ChatbotFull = () => {
 
     return (
         <>
-            {!isLoading ? (
-                <>
-                    {!chatflow || chatflow.apikeyid ? (
-                        <p>Invalid Chatbot</p>
-                    ) : (
-                        <FullPageChat
-                            chatflowid={chatflow.id}
-                            apiHost={baseURL}
-                            chatflowConfig={chatbotOverrideConfig}
-                            theme={{
-                                chatWindow: chatbotTheme,
-                                customCSS: `
-                                    span:has(> a#lite-badge) { display: none !important; }
-                                    a#lite-badge { display: none !important; }
-                                `
-                            }}
-                        />
-                    )}
-                    <LoginDialog show={loginDialogOpen} dialogProps={loginDialogProps} onConfirm={onLoginClick} />
-                </>
-            ) : null}
+            {loginDialogOpen ? (
+                <LoginDialog show={loginDialogOpen} dialogProps={loginDialogProps} onConfirm={onLoginClick} />
+            ) :
+                !isLoading ? (
+                    <>
+                        {!chatflow || chatflow.apikeyid ? (
+                            <p>Invalid Chatbot</p>
+                        ) : (
+                            <FullPageChat
+                                chatflowid={chatflow.id}
+                                apiHost={baseURL}
+                                chatflowConfig={chatbotOverrideConfig}
+                                theme={{
+                                    chatWindow: chatbotTheme,
+                                    customCSS: `
+                                        span:has(> a#lite-badge) { display: none !important; }
+                                        a#lite-badge { display: none !important; }
+                                    `
+                                }}
+                            />
+                        )}
+                    </>
+                ) : null
+            }
         </>
     )
 }
