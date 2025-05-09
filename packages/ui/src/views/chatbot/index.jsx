@@ -122,7 +122,10 @@ const ChatbotFull = () => {
                             chatflowConfig={chatbotOverrideConfig}
                             theme={{
                                 chatWindow: chatbotTheme,
-                                customCSS: `.flowise-footer { display: none !important; }`
+                                customCSS: `
+                                    span:has(> a#lite-badge) { display: none !important; }
+                                    a#lite-badge { display: none !important; }
+                                `
                             }}
                         />
                     )}
