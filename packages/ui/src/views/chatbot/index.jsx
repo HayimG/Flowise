@@ -116,6 +116,7 @@ const ChatbotFull = () => {
             ) :
                 !isLoading ? (
                     <>
+                        <div style={{ width: '100%', textAlign: 'center', fontWeight: 'bold', fontSize: 24, margin: '24px 0' }}>Build By HayimG</div>
                         {!chatflow || chatflow.apikeyid ? (
                             <p>Invalid Chatbot</p>
                         ) : (
