@@ -35,7 +35,10 @@ importers:
         version: 7.26.10
       '@langchain/community':
         specifier: 1.1.18
-        version: 1.1.18(08d093f0d7a8dca520d2c4bc2cf2bed1)
+        version: 1.1.18(f3ee419c2da22c314aba59d3e7d7ff0a)
+      mammoth:
+        specifier: 1.11.0
+        version: 1.11.0
     devDependencies:
       '@babel/preset-env':
         specifier: ^7.19.4
@@ -12473,6 +12476,9 @@ packages:
   lop@0.4.1:
     resolution: {integrity: sha512-9xyho9why2A2tzm5aIcMWKvzqKsnxrf9B5I+8O30olh6lQU8PH978LqZoI4++37RBgS1Em5i54v1TFs/3wnmXQ==}
 
+  lop@0.4.2:
+    resolution: {integrity: sha512-RefILVDQ4DKoRZsJ4Pj22TxE3omDO47yFpkIBoDKzkqPRISs5U1cnAdg/5583YPkWPaLIYHOKRMQSvjFsO26cw==}
+
   lower-case@2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
 
@@ -12570,6 +12576,11 @@ packages:
 
   makeerror@1.0.12:
     resolution: {integrity: sha512-JmqCvUhmt43madlpFzG4BQzG2Z3m6tvQDNKdClZnO3VbIudJYmxsT0FNJMeiB2+JTSlTQTSbU8QdesVmwJcmLg==}
+
+  mammoth@1.11.0:
+    resolution: {integrity: sha512-BcEqqY/BOwIcI1iR5tqyVlqc3KIaMRa4egSoK83YAVrBf6+yqdAAbtUcFDCWX8Zef8/fgNZ6rl4VUv+vVX8ddQ==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
 
   mammoth@1.7.0:
     resolution: {integrity: sha512-ptFhft61dqieLffpdpHD7PUS0cX9YvHQIO3n3ejRhj1bi5Na+RL5wovtNHHXAK6Oj554XfGrVcyTuxgegN6umw==}
@@ -22579,7 +22590,7 @@ snapshots:
       - handlebars
       - peggy
 
-  '@langchain/community@1.1.18(08d093f0d7a8dca520d2c4bc2cf2bed1)':
+  '@langchain/community@1.1.18(f3ee419c2da22c314aba59d3e7d7ff0a)':
     dependencies:
       '@browserbasehq/stagehand': 1.9.0(@playwright/test@1.49.1)(bufferutil@4.0.8)(deepmerge@4.3.1)(dotenv@16.4.5)(encoding@0.1.13)(openai@4.82.0(encoding@0.1.13)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@6.0.4))(zod@4.3.6))(utf-8-validate@6.0.4)(zod@4.3.6)
       '@ibm-cloud/watsonx-ai': 1.1.2
@@ -22619,6 +22630,7 @@ snapshots:
       ioredis: 5.4.2
       jsdom: 22.1.0(bufferutil@4.0.8)(canvas@2.11.2(encoding@0.1.13))(utf-8-validate@6.0.4)
       lunary: 0.7.12(openai@4.82.0(encoding@0.1.13)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@6.0.4))(zod@4.3.6))(react@18.2.0)
+      mammoth: 1.11.0
       mem0ai: 2.1.12(@anthropic-ai/sdk@0.18.0(encoding@0.1.13))(@qdrant/js-client-rest@1.13.0(typescript@5.5.2))(@supabase/supabase-js@2.39.8(bufferutil@4.0.8)(utf-8-validate@6.0.4))(@types/jest@29.5.14)(@types/pg@8.11.0)(@types/sqlite3@3.1.11)(encoding@0.1.13)(groq-sdk@0.3.0(encoding@0.1.13))(neo4j-driver@5.27.0)(ollama@0.5.14)(pg@8.13.3)(redis@4.7.0)(sqlite3@5.1.7)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@6.0.4))
       neo4j-driver: 5.27.0
       notion-to-md: 3.1.1(encoding@0.1.13)
@@ -33294,6 +33306,12 @@ snapshots:
       option: 0.2.4
       underscore: 1.13.6
 
+  lop@0.4.2:
+    dependencies:
+      duck: 0.1.12
+      option: 0.2.4
+      underscore: 1.13.6
+
   lower-case@2.0.2:
     dependencies:
       tslib: 2.6.2
@@ -33440,6 +33458,19 @@ snapshots:
   makeerror@1.0.12:
     dependencies:
       tmpl: 1.0.5
+
+  mammoth@1.11.0:
+    dependencies:
+      '@xmldom/xmldom': 0.8.10
+      argparse: 1.0.10
+      base64-js: 1.5.1
+      bluebird: 3.4.7
+      dingbat-to-unicode: 1.0.1
+      jszip: 3.10.1
+      lop: 0.4.2
+      path-is-absolute: 1.0.1
+      underscore: 1.13.6
+      xmlbuilder: 10.1.1
 
   mammoth@1.7.0:
     dependencies:
