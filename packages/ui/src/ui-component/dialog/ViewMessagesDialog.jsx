@@ -797,17 +797,68 @@ const ViewMessagesDialog = ({ show, dialogProps, onCancel }) => {
                             objectFit: 'cover'
                         }}
                     />
-                </Card>
-            )
-        } else if (item.type === 'html') {
-            return (
-                <div style={{ marginTop: '20px' }}>
-                    <div dangerouslySetInnerHTML={{ __html: item.data }}></div>
-                </div>
-            )
-        } else {
-            return (
-                <MemoizedReactMarkdown
+  775|   
+  776|       const renderArtifacts = (item, index, isAgentReasoning) => {
+  777|           if (item.type === 'png' || item.type === 'jpeg') {
+  778|               return (
+  779|                   <Card
+  780|                       key={index}
+  781|                       sx={{
+  782|                           p: 0,
+  783|                           m: 0,
+  784|                           mt: 2,
+  785|                           mb: 2,
+  786|                           flex: '0 0 auto'
+  787|                       }}
+  788|                   >
+  789|                       <CardMedia
+  790|                           component='img'
+  791|                           image={item.data}
+  792|                           sx={{ height: 'auto' }}
+  793|                           alt={'artifact'}
+  794|                           style={{
+  795|                               width: isAgentReasoning ? '200px' : '100%',
+  796|                               height: isAgentReasoning ? '200px' : 'auto',
+  797|                               objectFit: 'cover'
+  798|                           }}
+  799|                       />
+  800|                   </Card>
+  801|               )
+  802|           } else if (item.type === 'html') {
+  803|               import DOMPurify from 'dompurify';
+  804|               return (
+  805|                   <div style={{ marginTop: '20px' }}>
+  806|                    <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.data) }}></div>
+  807|                   </div>
+  808|               )
+  809|           } else {
+  810|               return (
+  811|                   <MemoizedReactMarkdown
+  812|                       remarkPlugins={[remarkGfm, remarkMath]}
+  813|                       rehypePlugins={[rehypeMathjax, rehypeRaw]}
+  814|                       components={{
+  815|                           code({ inline, className, children, ...props }) {
+  816|                               const match = /language-(\w+)/.exec(className || '')
+  817|                               return !inline ? (
+  818|                                   <CodeBlock
+  819|                                       key={Math.random()}
+  820|                                       chatflowid={dialogProps.chatflow.id}
+  821|                                       isDialog={true}
+  822|                                       language={(match && match[1]) || ''}
+  823|                                       value={String(children).replace(/\n$/, '')}
+  824|                                       {...props}
+  825|                                   />
+  826|                               ) : (
+  827|                                   <code className={className} {...props}>
+  828|                                       {children}
+  829|                                   </code>
+  830|                               )
+  831|                           }
+  832|                       }}
+  833|                   >
+  834|                       {item.data}
+  835|                   </MemoizedReactMarkdown>
+  836|               )
                     remarkPlugins={[remarkGfm, remarkMath]}
                     rehypePlugins={[rehypeMathjax, rehypeRaw]}
                     components={{
