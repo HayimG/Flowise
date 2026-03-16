@@ -1492,17 +1492,16 @@ export const ChatMessage = ({ open, chatflowid, isAgentCanvas, isDialog, preview
                             objectFit: 'cover'
                         }}
                     />
-                </Card>
-            )
-        } else if (item.type === 'html') {
-            return (
-                <div style={{ marginTop: '20px' }}>
-                    <div dangerouslySetInnerHTML={{ __html: item.data }}></div>
-                </div>
-            )
-        } else {
-            return (
-                <MemoizedReactMarkdown
+import DOMPurify from 'dompurify';
+
+...
+
+           } else if (item.type === 'html') {
+               return (
+                   <div style={{ marginTop: '20px' }}>
+                    <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.data) }}></div>
+                   </div>
+               )
                     remarkPlugins={[remarkGfm, remarkMath]}
                     rehypePlugins={[rehypeMathjax, rehypeRaw]}
                     components={{
