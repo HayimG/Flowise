@@ -4753,7 +4753,7 @@ packages:
   '@modelcontextprotocol/sdk@1.24.0':
     resolution: {integrity: sha512-RXgulUX6ewvxjAG0kOpLMEdXXWkzWgaoCGaA2CwNW7cQCIphjpJhjpHSiaPdVCnisjRF/0Cm9KWHUuIoeiAblQ==}
 
-  '@modelcontextprotocol/sdk@1.0.1':
+  '@modelcontextprotocol/sdk@1.24.0':
     resolution: {integrity: sha512-slLdFaxQJ9AlRg+hw28iiTtGvShAOgOKXcD0F91nUcRYiOMuS9ZBYjcdNZRXW9G5JQ511GRTdUy1zQVZDpJ+4w==}
 
   '@modelcontextprotocol/sdk@1.26.0':
@@ -23097,7 +23097,7 @@ snapshots:
       raw-body: 3.0.0
       zod: 3.24.2
 
-  '@modelcontextprotocol/sdk@1.0.1':
+  '@modelcontextprotocol/sdk@1.24.0':
     dependencies:
       content-type: 1.0.5
       raw-body: 3.0.0
