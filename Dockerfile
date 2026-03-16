@@ -1,16 +1,12 @@
 # Build local monorepo image
 # docker build --no-cache -t  flowise .
-
-# Run image
-# docker run -d -p 3000:3000 flowise
-
-FROM node:20-alpine
-RUN apk add --update libc6-compat python3 make g++
-# needed for pdfjs-dist
-RUN apk add --no-cache build-base cairo-dev pango-dev
-
-# Install Chromium
-RUN apk add --no-cache chromium
+    7|   FROM node:20-alpine
+    8|>>>RUN apk add --no-cache libc6-compat=1.2.13-r0 python3=3.9.7-r0 make=4.3-r0 g++=10.3.0-r0
+    9|   # needed for pdfjs-dist
+   10|   RUN apk add --no-cache build-base cairo-dev pango-dev
+   11|   
+   12|   # Install Chromium
+   13|   RUN apk add --no-cache chromium=1.3.0-r0
 
 # Install curl for container-level health checks
 # Fixes: https://github.com/FlowiseAI/Flowise/issues/4126
