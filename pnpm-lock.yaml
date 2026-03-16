@@ -3832,7 +3832,7 @@ packages:
     resolution: {integrity: sha512-ICSrSOT6FzSbR+xnbkP6BxXhuom1ViPRiy8K8KrL6bHbTiR5v1UnpskTWRpyhQS1GA6+3t1gp7XHxB5CZzLyqQ==}
     engines: {node: '>=18'}
 
-  '@langchain/community@0.3.37':
+  '@langchain/community@1.1.14':
     resolution: {integrity: sha512-Ifug3Gc6JHOFNWr0bxT1ie0AUKn3hWkZ4PG+EGqVz8MyeNr68lOhchY4oj51pQCC65KryfZ5CPhXrvbd5Il1GQ==}
     engines: {node: '>=18'}
     peerDependencies:
