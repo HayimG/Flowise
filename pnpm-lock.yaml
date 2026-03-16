@@ -662,7 +662,7 @@ importers:
         version: 0.5.45
       multer:
         specifier: ^1.4.5-lts.1
-        version: 1.4.5-lts.1
+        version: 2.1.0
       multer-cloud-storage:
         specifier: ^4.0.0
         version: 4.0.0(encoding@0.1.13)
@@ -13150,7 +13150,7 @@ packages:
     peerDependencies:
       '@aws-sdk/client-s3': ^3.0.0
 
-  multer@1.4.5-lts.1:
+  multer@2.1.0:
     resolution: {integrity: sha512-ywPWvcDMeH+z9gQq5qYHCCy+ethsk4goepZ45GLD63fOu0YcNecQxi64nDs3qluZB+murG3/D4dJ7+dGctcCQQ==}
     engines: {node: '>= 6.0.0'}
     deprecated: Multer 1.x is impacted by a number of vulnerabilities, which have been patched in 2.x. You should upgrade to the latest 2.x version.
@@ -34268,7 +34268,7 @@ snapshots:
       html-comment-regex: 1.1.2
       run-parallel: 1.2.0
 
-  multer@1.4.5-lts.1:
+  multer@2.1.0:
     dependencies:
       append-field: 1.0.0
       busboy: 1.6.0
