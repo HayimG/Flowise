@@ -454,7 +454,7 @@ importers:
         version: 8.11.3
       playwright:
         specifier: ^1.35.0
-        version: 1.42.1
+        version: 1.55.1
       puppeteer:
         specifier: ^20.7.1
         version: 20.9.0(bufferutil@4.0.8)(encoding@0.1.13)(typescript@5.5.2)(utf-8-validate@6.0.4)
@@ -14097,7 +14097,7 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.42.1:
+  playwright@1.55.1:
     resolution: {integrity: sha512-PgwB03s2DZBcNRoW+1w9E+VkLBxweib6KTXM0M3tkiT4jVxKSi6PmVJ591J+0u10LUrgxB7dLRbiJqO5s2QPMg==}
     engines: {node: '>=16'}
     hasBin: true
@@ -35393,7 +35393,7 @@ snapshots:
 
   playwright-core@1.49.1: {}
 
-  playwright@1.42.1:
+  playwright@1.55.1:
     dependencies:
       playwright-core: 1.42.1
     optionalDependencies:
