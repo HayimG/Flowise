@@ -151,7 +151,7 @@ importers:
         version: 1.5.0
       '@dqbd/tiktoken':
         specifier: ^1.0.7
-        version: 1.0.13
+        version: 1.25.23
       '@e2b/code-interpreter':
         specifier: ^0.0.5
         version: 0.0.5(bufferutil@4.0.8)(utf-8-validate@6.0.4)
@@ -343,7 +343,7 @@ importers:
         version: 3.0.2(ts-toolbelt@9.6.0)
       exa-js:
         specifier: ^1.0.12
-        version: 1.0.12(encoding@0.1.13)
+        version: 1.25.22(encoding@0.1.13)
       express:
         specifier: ^4.17.3
         version: 4.18.3
@@ -635,7 +635,7 @@ importers:
         version: link:../components
       flowise-nim-container-manager:
         specifier: ^1.0.11
-        version: 1.0.11
+        version: 1.25.21
       flowise-ui:
         specifier: workspace:^
         version: link:../ui
@@ -30236,7 +30236,7 @@ snapshots:
     dependencies:
       ansi-gray: 0.1.1
       color-support: 1.1.3
-      parse-node-version: 1.0.1
+      parse-node-version: 1.25.2
       time-stamp: 1.1.0
 
   fast-deep-equal@3.1.3: {}
