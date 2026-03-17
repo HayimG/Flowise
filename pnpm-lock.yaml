@@ -16280,7 +16280,7 @@ packages:
     deprecated: This SVGO version is no longer supported. Upgrade to v2.x.x.
     hasBin: true
 
-  svgo@2.8.0:
+  svgo@2.8.1:
     resolution: {integrity: sha512-+N/Q9kV1+F+UeWYoSiULYo4xYSDQlTgb+ayMobAXPwMnLvop7oxKMo9OzIrX5x3eS4L4f2UHhc9axXwY8DpChg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -38047,7 +38047,7 @@ snapshots:
       unquote: 1.1.1
       util.promisify: 1.0.1
 
-  svgo@2.8.0:
+  svgo@2.8.1:
     dependencies:
       '@trysound/sax': 0.2.0
       commander: 7.2.0
