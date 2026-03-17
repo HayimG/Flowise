@@ -10466,7 +10466,7 @@ packages:
     resolution: {integrity: sha512-KQVhvhK8ZkWzxKxOr56CPulAhH3dobtuQ4+hNQ+HekH/Wp5gSOafqRAeTphQUJAIk0GBvHZgJ2ZGRWd5kphMuw==}
     engines: {node: '>= 18'}
 
-  form-data@2.3.3:
+  form-data@2.5.4:
     resolution: {integrity: sha512-1lLKB2Mu3aGP1Q/2eCOx0fNbRMe7XdwktwOruhfqqd0rIJWwN4Dh+E3hrPSlDCXnSR7UtZ1N38rVXm+6+MEhJQ==}
     engines: {node: '>= 0.12'}
 
@@ -30618,7 +30618,7 @@ snapshots:
 
   form-data-encoder@4.0.2: {}
 
-  form-data@2.3.3:
+  form-data@2.5.4:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
