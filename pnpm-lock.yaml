@@ -4577,7 +4577,7 @@ packages:
       youtubei.js:
         optional: true
 
-  '@langchain/core@0.3.37':
+  '@langchain/core@0.3.80':
     resolution: {integrity: sha512-LFk9GqHxcyCFx0oXvCBP7vDZIOUHYzzNU7JR+2ofIMnfkBLzcCKzBLySQDfPtd13PrpGHkaeOeLq8H1Tqi9lSw==}
     engines: {node: '>=18'}
 
