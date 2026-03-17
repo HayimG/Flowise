@@ -22493,7 +22493,7 @@ snapshots:
       - encoding
       - openai
 
-  '@langchain/community@0.3.37(6e4df8bc9881da87991af3b4ecbed153)':
+  '@langchain/community@1.1.18(6e4df8bc9881da87991af3b4ecbed153)':
     dependencies:
       '@browserbasehq/stagehand': 1.9.0(@playwright/test@1.49.1)(bufferutil@4.0.8)(deepmerge@4.3.1)(dotenv@16.4.5)(encoding@0.1.13)(openai@4.82.0(encoding@0.1.13)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@6.0.4))(zod@3.22.4))(utf-8-validate@6.0.4)(zod@3.22.4)
       '@ibm-cloud/watsonx-ai': 1.1.2
